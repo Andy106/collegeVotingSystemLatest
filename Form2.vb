@@ -26,13 +26,16 @@ Public Class Form2
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         con.Open()
+
+
+
         Dim cmd As SqlCommand = New SqlCommand("INSERT INTO [dbo].[vote]
            ([student_id]
            ,[vote])
      VALUES
            ('" + TextBoxVoteSID.Text + "','1')", con)
         cmd.ExecuteNonQuery()
-        MessageBox.Show("Vote Submitted!", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information)
+        MessageBox.Show("Vote submitted!", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information)
         con.Close()
     End Sub
 

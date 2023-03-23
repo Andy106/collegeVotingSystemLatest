@@ -27,6 +27,7 @@ Partial Class Form1
         TextBoxUserName = New TextBox()
         TextBoxPassword = New TextBox()
         Button1 = New Button()
+        Button2 = New Button()
         SuspendLayout()
         ' 
         ' Label1
@@ -70,11 +71,21 @@ Partial Class Form1
         Button1.Text = "Submit"
         Button1.UseVisualStyleBackColor = True
         ' 
+        ' Button2
+        ' 
+        Button2.Location = New Point(25, 402)
+        Button2.Name = "Button2"
+        Button2.Size = New Size(210, 29)
+        Button2.TabIndex = 5
+        Button2.Text = "Click to see Voting Results"
+        Button2.UseVisualStyleBackColor = True
+        ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(800, 450)
+        Controls.Add(Button2)
         Controls.Add(Button1)
         Controls.Add(TextBoxPassword)
         Controls.Add(TextBoxUserName)
@@ -91,4 +102,5 @@ Partial Class Form1
     Friend WithEvents TextBoxUserName As TextBox
     Friend WithEvents TextBoxPassword As TextBox
     Friend WithEvents Button1 As Button
+    Friend WithEvents Button2 As Button
 End Class
